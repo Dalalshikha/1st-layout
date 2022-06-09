@@ -1,0 +1,478 @@
+*{
+    font-family: Lora-VariableFont_wght;
+}
+*, *::before, *::after{
+    margin:0;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.container{
+    padding:0 !important;
+}
+.uni-padding{
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+@font-face {
+    font-family: Lora-VariableFont_wght;
+    src: url(fonts/Lora-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Playball-Regular;
+    src: url(fonts/Playball-Regular.ttf);
+}
+#topbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 0;
+
+}
+
+#topbar img{
+    height: 90px;
+    width: 110px;
+}
+#topbar i{
+    display: none;
+}
+#nv{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 100%;
+    max-width: 600px;
+    width: 100%;
+}
+#nv a{
+    text-decoration: none;
+    color: #303030 ;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+}
+#nv a.active{
+    border: 2px solid #072769;
+}
+#nv a:active, #nv a:hover{
+    border: 2px solid #072769;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+#herosection{
+    background-image: url(images/Layer\ 7.png);
+    background-position: 50% 50%;
+    background-size:cover;
+    position: relative;
+    padding: 180px 0;
+}
+#herosection::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.44);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+#p1{
+    font-family:Playball-Regular ;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+#p2{
+    font-family:Playball-Regular ;
+    font-size: 38px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+#first-sectn{
+    padding: 60px 0;
+}
+
+.extra-padng img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.fst-sectn-p{
+    font-size: 20px;
+    color: #303030;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 12px;
+}
+.btn1{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0);
+    font-family:Playball-Regular ;
+    font-style: italic;
+    font-size: 42px;
+    border:0 ;
+    margin-top: -5px;
+    position: relative;
+}
+.btn1 a{
+    color: #ffffff;
+}
+.btn1 a:hover, .btn1 a:focus{
+    color: #ffffff;
+    text-decoration: none;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0;
+}
+#secnd-sectn{
+    display: flex;
+    background-color: #eaf1fa;
+    gap: 60px;
+}
+#left-scnd-sectn{
+    background-image: url(./images/Layer15.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45%;
+}
+#first-sectn{
+    display: flex;
+    gap: 24px;
+}
+#first-sectn div{
+    width:33%;
+}
+#center{
+    text-align: center;
+    padding:20px 0 80px;
+}
+#right-scnd-sectn{
+    background-color: #eaf1fa;
+    padding: 40px 0 40px 0;
+    width: 490px;
+}
+#right-scnd-sectn h1{
+    font-weight:900;
+    font-size: 32px;
+    color:#153f6f;
+    line-height: 1.5em;
+}
+#p3{
+    font-family: Playball-Regular;
+    color:#232323;
+    font-size:30px ;
+    margin-top: -5px;
+}
+#p4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+     color: #232323;
+}
+.btn2{
+    text-transform: uppercase;
+    background-color: #153f6f;
+    padding: 7px 15px;
+    margin-top: 20px;
+}
+.btn2 a, .btn2 a:hover, .btn2 a:focus{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+#third-sectn{
+    padding-top: 80px;
+}
+.heading{ 
+    font-weight:900;
+    font-size: 32px;
+    color:#153f6f;
+    text-align: center;
+}
+#slidebtn{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 30px;
+}
+#left-slide{
+    background-color:#072769 ;
+    border-radius: 50px;
+    padding: 0 20px;
+    width: 85px;
+    height: 26px;
+    text-align: center;
+    border: 2px solid #153f6f;
+    z-index:2;
+}
+#left-slide a{
+    font-family: Playball-Regular;
+    color:white;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+}
+#left-slide:hover, #left-slide:focus{
+    border: 2px solid #d3d3d3;
+    background-color:#e9f1f9;
+    text-decoration: none;
+    text-align: center;
+    color:#232323;
+    border-radius: 50px 0px 0px 50px;
+    border-right:0px;
+    padding: 0 20px;
+    width: 85px;
+    height: 26px;
+}
+
+#left-slide:hover a, #left-slide:focus a{
+    color:#232323;
+}
+#right-slide{
+    background-color:#e9f1f9;
+    border-radius: 50px;
+    width: 85px;
+    height: 26px;
+    text-align: center;
+    border: 2px solid #d3d3d3;
+    margin-left: -13px;
+
+}
+#right-slide a{
+    font-family: Playball-Regular;
+    color:#232323;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    }
+    #right-slide:hover, #right-slide:focus{
+        background-color:#072769 ;
+        border-radius: 50px;
+        width: 85px;
+        height: 26px;
+        text-align: center;
+        border-color:#153f6f;
+        text-decoration: none;
+        border-radius: 0px 50px 50px 0px;
+    }
+    #right-slide:hover a, #right-slide:focus a{
+        color:white;
+    }
+    .box{
+        background-color: #e9f1f9;
+        padding: 30px 30px!important;
+       min-height:739px!important ;
+       width: 32.5% !important;
+    }
+    .container-heading{
+        font-family: Playball-Regular;
+        color:#232323;
+        font-size:23px;
+        text-align: center;
+        border-bottom: 2px  solid #dfdfdf ;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        }
+        .container-content{
+            font-family: Playball-Regular;
+            color:#232323;
+            font-size:18px;
+            text-align: center;
+            margin-top: 10px;
+           
+        }
+        .space{
+            display: flex;
+            justify-content: space-between;
+        }
+        .space span{
+            font-family: Playball-Regular;
+            color:#232323;
+            font-size:14px;
+            text-align: center;
+            margin-top: 10px;                                                                                                    
+        }
+        .left-align{
+            text-align: left;
+            width: 60%;
+        }
+        #middle{
+            margin:0 9px;
+        }
+        #fourth-sectn{
+            padding: 30px 0;
+            min-height: 800px!important;
+        }
+        #fifth-sectn{
+            padding: 50px 0 100px;
+            display: flex;
+            gap:30px;
+        }
+        #left-fifth{ 
+            width: 50%;
+            height: auto;
+            position: relative;
+            }
+            .video-tag{
+                width:100%;
+                height:100%;
+            }
+            #right-fifth{
+                background-color: #e9f1f9;width:50%;
+                padding:40px;
+            }
+            #right-fifth img{
+                width: 90px;
+                display: block;
+                margin: 0 auto;
+                padding-bottom: 20px;
+                }
+            .fifth-r-p{
+                font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                color:434343;
+                text-align: center;
+                margin-bottom: 0!important;
+            }
+            #fifth-r-p2{
+                margin-top: 10px;
+                font-family: Playball-Regular;
+                color:#153f6f;
+                font-size:22px;
+                text-align: center;
+            }
+            #sixth-sectn{
+                background-color:#e9f1f9 ;
+                padding: 80px 0 0;
+                height: auto !important;
+            }
+            #left-sixth{
+                padding-left:0!important;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                min-height: 447px!important;
+                
+            }
+            .sixth-l-p{
+                font-family: Playball-Regular;
+                color:#153f6f;
+                font-size:30px;
+            }
+            #sixth-l-p1{
+                font-family: Lora-VariableFont_wght;
+                font-size: 36px;
+                color:#153f6f;
+                font-weight: 800;
+                margin-top: -20px !important;
+            }
+            .sixth-l-p2{
+                font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                color:232323;
+                margin-bottom: 0!important;
+            }
+            .right-sixth{
+                padding-right: 0!important;
+            }
+            .right-sixth img{
+                display: block;
+                float: right;
+                margin-top: -130px;
+            }
+            #seventh-sectn{
+                padding: 60px 0 80px;
+            }
+        input[type=email]{
+            width: 400px;
+            padding:10px;
+            border: 2px solid #cccccc;
+            margin:0 auto;
+        }
+        input[type=submit]{
+            padding:9px;
+            font-size: 18px;
+            background-color: #153f6f;
+            color:white;
+            margin-left:-5px;
+            border:0;
+            width:170px;
+            text-transform: uppercase;
+
+        }
+        form{
+            margin:0 auto !important;
+           max-width:570px ;
+           display: flex;
+           padding:20px 0 0;
+        }
+        #f1{
+            background-color: #e9f1f9;
+            padding: 80px 0;
+        }
+        .heading2{
+            font-weight:900;
+            font-size: 20px;
+            color:#153f6f;
+            text-align: center;
+        }
+        #f2{
+            background-color: #153f6f;
+            padding: 10px 0;
+        }
+        #f2 p{
+            font-size: 16px;
+            color:white;
+            text-align: center;
+            margin-bottom: 0!important;
+        }
+        @media screen and (max-width:768px){
+            #topbar {
+                padding:10px;
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                background-color: white !important;
+                z-index: 9;
+                top: 0;
+                right: 0;
+                padding: 20px;
+            }
+            #nv{
+                flex-direction: column;
+               
+
+            }
+            #topbar i{
+                display: block;
+                float: right;
+            
+            }
+
+            ul li{
+                margin-top: 10px;
+            }
+            
+            
+        }
+
